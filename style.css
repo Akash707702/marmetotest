@@ -1,0 +1,254 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.navbar-logo {
+  max-width: 150px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 15px; /* Space between links */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  padding: 5px 10px;
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 15px; /* Space between icons */
+}
+
+.navbar-icon {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* Image Container */
+.container {
+  width: 100%;
+  height: auto;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Cart Section */
+.cart-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px;
+  gap: 20px;
+}
+
+/* Cart Section */
+.cart-summary {
+  flex: 1 1 100%; /* Full-width for smaller screens */
+  max-width: 45%; /* Side-by-side for larger screens */
+  border: 1px solid #ddd;
+  background-color: #cfcdaea8;
+  padding: 20px;
+  padding-top: 10px;
+}
+
+.cart-summary p {
+  margin-bottom: 15px;  /* Added space between subtotal and total */
+  font-size: 18px;
+}
+
+#total {
+  color: #e1ad01; 
+  font-weight: bold;
+  margin-bottom: 15px;  /* Space between Total and Checkout button */
+}
+
+#checkout-btn {
+  display: inline-block;
+  margin: 0 auto;
+  border-radius: 10vh;
+  background-color: #c4c5c437;
+  color: rgb(12, 11, 11);
+  padding: 10px 20px;
+  border: black 2px solid;
+  cursor: pointer;
+  width: 50%; /* Full-width for small screens */
+  margin-top: 20px;  /* Adds extra space above the checkout button */
+}
+
+.cart-items{
+
+  flex: 1 1 100%; /* Full-width for smaller screens */
+  max-width: 45%; /* Side-by-side for larger screens */
+  border: 1px solid #ddd;
+  background-color: #cfcdaea8;
+  padding: 20px;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.cart-table th,
+.cart-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.cart-table th {
+  background-color: #f4f4f4;
+}
+
+.cart-item-image {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.delete-icon {
+  width: 20px;
+  cursor: pointer;
+}
+
+.cart-summary {
+  max-width: 30%;
+  text-align: center;
+  padding-top: 5vh;
+  height: 40vh;
+}
+
+
+#total {
+  color: #e1ad01; 
+  font-weight: bold;
+}
+
+#checkout-btn {
+  display: inline-block;
+  margin: 0 auto;
+  border-radius: 10vh;
+  background-color: #c4c5c437;
+  color: rgb(12, 11, 11);
+  padding: 10px 20px;
+  border: black 2px solid;
+  cursor: pointer;
+  width: 50%; /* Full-width for small screens */
+}
+
+/* Footer */
+.container-3 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    position: static;
+    transform: none;
+  }
+
+  .navbar-icons {
+    margin-top: 10px;
+  }
+
+  .cart-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cart-items,
+  .cart-summary {
+    max-width: 100%;
+  }
+
+  .cart-item img {
+    max-width: 60px;
+  }
+
+  #checkout-btn {
+    width: auto;
+  }
+
+  .cart-table {
+    font-size: 14px;
+  }
+
+  .cart-table th,
+  .cart-table td {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-logo {
+    max-width: 120px;
+  }
+
+  .navbar ul {
+    font-size: 14px;
+  }
+
+  .cart-item img {
+    max-width: 50px;
+  }
+
+  .cart-summary {
+    padding: 10px;
+  }
+
+  .cart-table {
+    font-size: 12px;
+  }
+
+  .cart-table th,
+  .cart-table td {
+    padding: 6px;
+  }
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 25px; /* Increased space between icons */
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddCart Page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="./logo .png" alt="Logo" class="navbar-logo">
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="navbar-icons">
+            <img src="https://img.icons8.com/?size=100&id=7eX13e1GI7bn&format=png&color=000000" alt="Icon 1" class="navbar-icon">
+            <img src="https://img.icons8.com/?size=100&id=19413&format=png&color=000000" alt="Icon 2" class="navbar-icon">
+            <img src="https://img.icons8.com/?size=100&id=Nvthh88fOzoL&format=png&color=000000" alt="Icon 3" class="navbar-icon">
+        </div>
+    </nav>
+
+    <div class="container">
+        <img src="./img.jpeg" alt="">
+    </div>
+
+    <!-- Cart Section -->
+    <main class="cart-container">
+        <div class="cart-items">
+          
+            <table id="cart-items-list" class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                      
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Cart items will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Cart Totals -->
+        <div class="cart-summary">
+            <h3 style="margin-bottom: 15px;">Cart Totals</h3>
+
+            <p>Subtotal:&nbsp; <span id="subtotal">₹0</span></p>
+            <p>Total:&nbsp;&nbsp; <span id="total">₹0</span></p>
+            <button id="checkout-btn">Check Out</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div class="container-3">
+        <img src="./footer.png" alt="">
+     </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
