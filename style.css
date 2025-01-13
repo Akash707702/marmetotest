@@ -43,7 +43,7 @@ body {
 
 .navbar-icons {
   display: flex;
-  gap: 15px; /* Space between icons */
+  gap: 15px; 
 }
 
 .navbar-icon {
@@ -250,5 +250,5 @@ body {
 
 .navbar-icons {
   display: flex;
-  gap: 25px; /* Increased space between icons */
+  gap: 25px; 
 }
